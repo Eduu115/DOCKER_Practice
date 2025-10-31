@@ -1,0 +1,31 @@
+Postgresql - Docker
+Actividad práctica: PostgreSQL con Docker 
+
+Objetivos:
+
+1. Configurar un servicio de PostgreSQL usando Docker Compose con un docker-compose.yml personalizado.
+2. Practicar la creación de tablas con clave primaria (PK) y clave foránea (FK).
+3. Insertar y consultar datos con sentencias SQL básicas (CREATE TABLE, INSERT, SELECT, etc.).
+4. Documentar el proceso con capturas de pantalla y explicaciones en un informe PDF, de cada uno de los pasos. 
+    Recuerda que se debe ver claramente tu nombre en cada una de las capturas.
+    Pasos a seguir
+
+1.Crea el archivo docker-compose.yml:
+    El usuario debe ser "ADMIN" 
+    La contraseña debe ser "ADMIN"
+    El nombre de la base de datos baseDatosLibros<NombreAlumno> (reemplaza <NombreAlumno> por tu nombre)
+    El nombre del contenedor pg-practica-libros
+
+2. Ejecutar los comandos que sean necesarios para levantar el contenedor y entrar en el cliente psql
+
+3. Crear tablas Autores y Libros
+    La tabla autores debe tener al menos los campos: id, nombre,apellidos, fecha de nacimiento,pais
+    La tabla libros deber tener al menos los campos: id, titulo, numero de paginas, autor
+    Tú decides el tipo de dato más adecuado para cada campo (por ejemplo: VARCHAR, DATE, INTEGER, SERIAL, etc.), y 
+    debes establecer correctamente una clave primaria y una clave foránea entre las tablas.
+
+4. Muestra que se ha creado la estructura de cada una de las tablas correctamente
+
+5. Inserta datos de ejemplo, al menos 4 autores y 2 libros asociados a cada autor
+
+6. Realiza consultas básicas, al menos realiza 6 consultas diferentes entre las dos tablas
